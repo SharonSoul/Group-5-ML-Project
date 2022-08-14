@@ -50,13 +50,13 @@ def userInput():
         "fertilizerCode": Fertilizer,
         "reps": Reps,
         "branchNumber": Branches,
-        "lengthMainStem(cm)" : Stem,
+        "lengthMainStemCM" : Stem,
         "leafAreaIndex": Leaf,
-        "petoileLength(cm)": Petoile,
-        "weightAdventitousRoots(Kg)": Root,
-        "dryBiomass(Kg)": Biomass,
-        "totalWeightStorageRoots(Kg)": totalRoot,
-        "weightMarketableStorageRoots(Kg)": marketRoot,
+        "petoileLength_CM": Petoile,
+        "weightAdventitousRootsKG": Root,
+        "dryBiomassKG": Biomass,
+        "totalWeightStorageRootsKG": totalRoot,
+        "weightMarketableStorageRootsKG": marketRoot,
         "totalNumberStorageRoots": totalNumber
         }
     
