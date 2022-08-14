@@ -21,7 +21,7 @@ X_train = "X.sav"
 fita = pickle.load(open(X_train, "rb"))
 
 
-st.title("Orange Flesh Sweet Potato Marketable Yield Prediction Application")
+st.title("Sweet Potato Marketable Yield Prediction Application")
 st.subheader("This app takes in certain variables to enable the prediction of marketable yield of Orange Flesh Sweet Potato in contrast with White Flesh Sweet Potato")
 st.info("The experiment was conducted in two different locations, Cameroon (Nkolbisson) and Tanzania (Njombe)")
 
