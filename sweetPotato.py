@@ -26,11 +26,11 @@ st.subheader("This app takes in certain variables to enable the prediction of ma
 st.info("The experiment was conducted in two different locations, Cameroon (Nkolbisson) and Tanzania (Njombe)")
 
 def userInput():
-    Location = st.number_input("Where is the location of the farm - Input either 0 or 1, 1 is Nkolbisson and 0 is Njombe ", 0 , 1)
-    Soil = st.number_input("What type of soil was utilized? - Input either 0 or 1 - 1 is Nitisol and 0 is Andosol ", 0, 1)
-    Varient = st.number_input("Is the potato White Fleshed or Orange Fleshed? - Input either 0 or 1 - 1 is Orange Fleshed and 0 is White Fleshed ", 0, 1)
+    Location = st.selectbox("Where is the location of the farm - Input either 0 or 1, 1 is Nkolbisson and 0 is Njombe ", options = [0 , 1], index = 0)
+    Soil = st.selectbox("What type of soil was utilized? - Input either 0 or 1 - 1 is Nitisol and 0 is Andosol ", options = [0 , 1], index = 0)
+    Varient = st.selectbox("Is the potato White Fleshed or Orange Fleshed? - Input either 0 or 1 - 1 is Orange Fleshed and 0 is White Fleshed ", options = [0 , 1], index = 0)
     Fertilizer = st.number_input("What fertilizer was used? - The fertilizers tested are:- Control, FC, NPK20-10-10, PL, Tithonia, NPK6-15-28, RHB, FC/NPK20-10-10, PL/NPK20-10-10, RHB/NPK20-10-10 - Input a number from 0 to 9 respectively", 0, 9)
-    Reps = st.number_input("Is it the first rep, the second rep or the third rep? - Input either 0, 1 or 2 - 0 is the first rep, 1 is the second rep and 2 is the third rep", 0, 3)
+    Reps = st.selectbox("Is it the first rep, the second rep or the third rep? - Input either 0, 1 or 2 - 0 is the first rep, 1 is the second rep and 2 is the third rep", options = [0 , 1], index = 0)
     Branches = st.number_input("How many branches did the plant have in the selected rep?  - Input any number from 2 to 8 - The numbers can either be integers or decimals", 2, 8)
     Stem = st.number_input("What is the length of the stem in the selected rep? - Input any number from 70cm to 400cm - The numbers can either be integers or decimals", 70, 400)
     Leaf = st.number_input("What is the index of the leaf area? - Input any number from 1 to 7 - The numbers can either be integers or decimals", 1, 7)
